@@ -36,20 +36,6 @@ In accordance with the usual “Your House, Your Rules” approach, contribution
 - [EditorConfig](https://EditorConfig.org) settings for the larger use-case (in `.editorconfig`)
 - A `npm run lint` script you can use to ensure consistency. It’s part of the `npm test` script, which in turn is run through the `pre-commit` and `pre-push` Git hooks.
 
-## Testing
-
-The project files all have full tests. We use [Jest](https://jestjs.io/) for this, and have two npm scripts ready:
-
-- `npm test` runs both the linter and the tests (`test:core`). Run at commit and push time through Git hooks installed by [Husky](https://github.com/typicode/husky).
-- `npm run test:core` does a one-pass; it includes full test coverage reporting.
-- `npm run test:watch` runs a developer test watch; this is what you should use when working on your code and tests.
-
-The test suite uses the amazing [MongoDB Memory Server](https://www.npmjs.com/package/mongodb-memory-server) package, which means you won't need to have a running MongoDB server with a test database to run our tests! How cool is that!
-
-We use Jest’s built-in `expect()` and matchers, along with its native mocking abilities. If you’re not familiar with them, here are the docs for [matchers](https://jestjs.io/docs/en/expect), [function mocking](https://jestjs.io/docs/en/mock-function-api) and [module mocking](https://jestjs.io/docs/en/manual-mocks). Look at the existing tests for inspiration and guidance.
-
-Make sure **any new code you send has matching tests**, and that the test suite passes.
-
 ## Sending a Pull Request
 
 Once you have something ready to contribute, or if you’re too stuck and need help, send a Pull Request from your fork’s code to our main repository. GitHub makes that easy for you in multiple ways. If you’re new to Pull Requests, check out [their neat docs about it](https://help.github.com/articles/proposing-changes-to-your-work-with-pull-requests/).
