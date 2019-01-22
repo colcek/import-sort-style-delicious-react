@@ -59,7 +59,7 @@ import TogglablePasswordField from './TogglablePasswordField'
 
 ## Contributing
 
-Did we let something slip?  Do you have an awesome extra feature idea?  Cool, let us know.  Check out [our guide](https://github.com/deliciousinsights/import-sort-style-delicious/CONTRIBUTING.md) to get started.
+Did we let something slip?  Do you have an awesome extra feature idea?  Cool, let us know.  Check out [our guide](./CONTRIBUTING.md) to get started.
 
 ## License
 
